@@ -80,6 +80,7 @@ These validate the Runge-Kutta methods on the actual 2-pipe gas network model, a
 - `convergence_2_pipe_network_monolithic_radauiia.py`: `RungeKutta` with Radau IIA (s=1,2,3).
 - `convergence_2_pipe_network_monolithic_lobattoiiic.py`: `RungeKutta` with Lobatto IIIC (s=2,3,4).
 - `convergence_2_pipe_network_partitioned.py`: `PartitionedRungeKutta` with Lobatto IIIA/IIIB (s=2,3,4).
+- - `convergence_2_pipe_network_partitioned.py`: `PartitionedRungeKutta` with Lobatto IIIA/IIIB (s=2,3,4), but under artifical defect on initial values.
 
 These three scripts load `experiments/ref_solution.npz` (already committed to the repo) as the reference solution, so they can be run directly as well. If you need to regenerate that reference solution (e.g. after changing the network scenario), run:
 ```bash
