@@ -1,0 +1,6 @@
+numpy
+jax
+scipy
+matplotlib
+networkx
+pytest

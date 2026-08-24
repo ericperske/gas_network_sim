@@ -1,0 +1,2 @@
+experiments/ref_solution.npz filter=lfs diff=lfs merge=lfs -text
+experiments/ref_solution_before_initial_data_fix.npz filter=lfs diff=lfs merge=lfs -text
