@@ -28,7 +28,8 @@ show the convergence order of the method.
 
 The convergence order is expected to be O(h^p) for y2 and O(h^q) for w, where
 p and q are the parameters of the Radau IIA method satisfying the Runge-Kutta
-order conditions B(p) and C(q).
+order conditions B(p) and C(q). 
+Those rates exceed our theoretical rates, cf. Ch. VII.4 and VII.5 of https://doi.org/10.1007/978-3-642-05221-7
 """
 
 # ---------------- test problem ----------------

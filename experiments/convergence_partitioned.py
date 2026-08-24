@@ -28,6 +28,7 @@ source, which states for the Lobatto IIIA/IIIB pair with s stages:
     u_n - u(t_n) = O(h^(2s-2))
     v_n - v(t_n) = O(h^(2s-2))
     lam_n - lam(t_n) = O(h^s) (s even) or O(h^(s-1)) (s odd)
+Those rates exceed our theoretical rates, cf. Ch. VII.4 and VII.5 of https://doi.org/10.1007/978-3-642-05221-7
 """
 
 # ---------------- test problem ----------------

@@ -449,7 +449,7 @@ def plot_P6(results: dict) -> None:
                    linewidth=1.8, markersize=6, label=label)
     ax.invert_xaxis()
     ax.set_xlabel("h")
-    ax.set_ylabel("plateau")
+    ax.set_ylabel("error")
     ax.set_title(r"method contrast across h, $\theta_0 = 10^{-4}$")
     ax.grid(True, **GRID_KW) # type: ignore
     ax.legend()
