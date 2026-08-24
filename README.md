@@ -40,8 +40,8 @@ The reformulated system is obtained by defining projector ```math P``` and ```ma
 ```math
 \begin{aligned}
 \dot{u} &= f(u,v,t) \\
-\dot{v} &= \phi(u,v,\lambda,t) \\
-0 &= g(u,v,t)
+\dot{v} &= g(u,v,\lambda,t) \\
+0 &= \phi(u,v,t)
 \end{aligned}
 ```
 It is solved using the Lobatto IIIA-IIIB method.
