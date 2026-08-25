@@ -56,6 +56,15 @@ Two equivalent sets of variable names are used across the code and experiments, 
 
 `rho`/`q` (network) refer to the same roles as `y` (toy DAEs), just named after the physical quantity (density/flux) instead of the abstract state when the experiment concerns the full pipe network rather than a toy problem; `u`/`v` are the corresponding partitioned-state names in both cases. `q1` and `h2` denote the two boundary-condition profiles of a node (a given flux and a given enthalpy respectively) and are unrelated to the `u`/`v` state names above; `s` denotes the number of Runge-Kutta stages, `h` the step size.
 
+## Cloning-instructions
+The repository contains a numerically calculated reference solution for the experiments of the gas network simulation. This file is too large for a regular GitHub push, so it is handled using git LFS. The user needs to install LFS before cloning the repository, otherwise the reference solution might be lost. It is installed by running\
+```git lfs install```\
+After that, the user can clone the repository by using \
+```git clone```\
+If the repository was cloned before installing LFS, the user is adviced to first run the installation command and than perform an LFS pull using\
+```git lfs pull```
+
+
 ## Usage
 In order to use this repository for simulations start by installing all required packages using\
 ```pip install -r requirements.txt```
