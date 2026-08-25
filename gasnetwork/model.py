@@ -398,7 +398,7 @@ class R_mo_q:
 
                 for i in range(2):
                     for j in range(2):
-                        val = (pipe.gamma / rho_ek) * self._integrate_abs_v_ri_rj(q_in, q_out, h, i, j)
+                        val = (pipe.gamma / (rho_ek * rho_ek)) * self._integrate_abs_v_ri_rj(q_in, q_out, h, i, j)
                         # adjacent elements share the flux coefficient at their common
                         # interior node, so contributions must accumulate
                         R = R.at[base + i, base + j].add(val)
