@@ -70,7 +70,7 @@ print(f"Done solving the monolithic model in {tic_mono-toc_mono:.3f} seconds.")
 print()
 print("Saving monolithic solution...")
 save_ref_solution(
-    name="ref_solution_after_friction_fix",
+    name="ref_solution",
     t=t_mono,
     rho=y_mono[:, :sum(pipe.n_elements for pipe in pipes)],
     q=y_mono[:, sum(pipe.n_elements for pipe in pipes):],
